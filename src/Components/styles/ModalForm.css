@@ -1,0 +1,25 @@
+.modalForm{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.567);
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.active__form{
+    display: grid;
+}
+
+.modalForm__form{
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 4px;
+}
