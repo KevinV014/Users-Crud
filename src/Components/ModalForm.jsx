@@ -40,28 +40,28 @@ const ModalForm = ({isShowModal, handleClickShowModal, createrUser, updatingUser
     <section className={`modalForm ${isShowModal ? "active__form" : ""}`}>
         <form onSubmit={handleSubmit(submit)} className='modalForm__form'>
             <h3 className='modalForm__title'>{updatingUser ? "Edit user" : "New user"}</h3>
-            <i onClick={handleClickClose} className='modalForm__x bx bx-x'></i>
+            <i onClick={ handleClickClose} className='modalForm__x bx bx-x'></i>
             <div className='modalForm__div'>
-                <label className='modalForm__label' htmlFor=""></label>
+                <label className='modalForm__label' htmlFor="">First Name</label>
                 <input className='modalForm__input' type="text" {...register("first_name")} />
             </div>
             <div className='modalForm__div'>
-                <label className='modalForm__label' htmlFor=""></label>
+                <label className='modalForm__label' htmlFor="">Last Name</label>
                 <input className='modalForm__input' type="text" {...register("last_name")} />
             </div>
             <div className='modalForm__div'>
-                <label className='modalForm__label' htmlFor=""></label>
+                <label className='modalForm__label' htmlFor="">Email</label>
                 <input className='modalForm__input' type="email" {...register("email")} />
             </div>
             <div className='modalForm__div'>
-                <label className='modalForm__label' htmlFor=""></label>
+                <label className='modalForm__label' htmlFor="">Password</label>
                 <input className='modalForm__input' type="password" {...register("password")} />
             </div>
             <div className='modalForm__div'>
-                <label className='modalForm__label' htmlFor=""></label>
+                <label className='modalForm__label' htmlFor="">Birthday</label>
                 <input className='modalForm__input' type="date" {...register("birthday")} />
             </div>
-            <button className='modalForm'>{updatingUser ? "Update new user" : "Add New User"}</button>
+            <button className='modalForm__btn'>{updatingUser ? "Update new user" : "Add New User"}</button>
         </form>
     </section>
   )

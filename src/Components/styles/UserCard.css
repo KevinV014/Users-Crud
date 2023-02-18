@@ -1,0 +1,91 @@
+.sectionForm{
+    display: grid;
+    grid-template-columns:  300px 300px 300px;
+    grid-template-rows: 250px;
+    place-content: center;
+    gap: 15px;
+}
+
+.articleForm{
+    border: 1px double #E5E5E5;
+    border-radius: 5px;
+}
+
+.articleForm__title{
+    text-align: center;
+    margin: 15px 0 10px  0;
+}
+
+.articleForm__hr{
+    width: 90%;
+    color: #E5E5E5;
+    border: 0.3px double #E5E5E5;
+}
+
+.articleForm__li{
+    margin-left: .8rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.articleForm__email{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    color: #D3D3D3;
+}
+
+.articleForm__birthday{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    color: #D3D3D3;
+}
+
+.articleForm__iBirthday{
+    margin-right: 8px;
+}
+
+.articleForm__footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: .4rem;
+}
+
+.articleForm__iPencil{
+    width: 25px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #D3D3D3;
+}
+
+.articleForm__btnPencil{
+    cursor: pointer;
+    background: #F7F7F7;
+    border: 0;
+    border-radius: 5px;
+    margin: 0px 8px;
+    border: 0.3px double #BDBDBD;
+}
+
+.articleForm__iTrash{
+    color: #ffffff;
+    width: 25px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.articleForm__btnTrash{
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    background: #D85D5D;
+    border: 0.3px double #D93F3F;
+}

@@ -1,0 +1,43 @@
+.navbar__button{
+    background: var(--purple);
+    border: none;
+    color: #ffffff;
+    padding: 8px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    height: 30px;
+    margin-right: 50px;
+    border-radius: 5px;
+}
+
+.navbar__button{
+    -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.navbar__button:hover, .navbar__button:focus, .navbar__button:active{
+    -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 3rem;
+    font-weight: bolder;
+}
+
+.navbar__plus{
+    padding-right: 10px;
+    font-size: 13px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

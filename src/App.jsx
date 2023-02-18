@@ -20,13 +20,13 @@ function App() {
   const createrUser = (data) => {
     axios.post(`${BASE_URL}users/`, data)
     .then(() => getAllUsers())
-    .catch((err) => setUsers(err.data))
+    .catch((err) => console.log(err.data))
   }
 
   const getAllUsers = () => {
     axios.get(`${BASE_URL}users/`)
     .then((res) => setUsers(res.data))
-    .catch((err) => setUsers(err.data))
+    .catch((err) => console.log(err.data))
   }
 
   const deleteUser = (id) => {

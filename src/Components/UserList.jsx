@@ -3,7 +3,7 @@ import UserCard from './UserCard'
 
 export const UserList = ({users, deleteUser, setUpdatingUser, handleClickShowModal}) => {
   return (
-    <section>
+    <section className='sectionForm'>
       {
         users.map(user => <UserCard 
           key={user.id} 
