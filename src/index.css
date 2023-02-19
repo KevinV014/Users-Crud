@@ -26,3 +26,33 @@ ul{
     margin: 0;
     padding: 0;
 }
+
+@media (max-width: 1000px) {  
+    .sectionForm{
+        grid-template-columns:  300px 300px;
+    grid-template-rows: 250px;
+    }
+}
+
+@media (max-width: 719px) {
+    .sectionForm{
+        grid-template-columns:  300px;
+    grid-template-rows: 250px;
+    }
+
+@media (max-width: 385px){
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar__title{
+        margin: 10px auto;
+    }
+
+    .navbar__button{
+        margin: 10px auto;
+    }
+}
+}
