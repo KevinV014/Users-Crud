@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 import "./styles/ModalForm.css"
 
 const defaultValues = {
-    firs_name: "",
+    first_name: "",
     last_name: "",
     email: "",
     password: "",
@@ -43,19 +43,19 @@ const ModalForm = ({isShowModal, handleClickShowModal, createrUser, updatingUser
             <i onClick={ handleClickClose} className='modalForm__x bx bx-x'></i>
             <div className='modalForm__div'>
                 <label className='modalForm__label' htmlFor="">First Name</label>
-                <input className='modalForm__input' type="text" {...register("first_name")} />
+                <input className='modalForm__input' type="text" autoComplete='off' {...register("first_name")} />
             </div>
             <div className='modalForm__div'>
                 <label className='modalForm__label' htmlFor="">Last Name</label>
-                <input className='modalForm__input' type="text" {...register("last_name")} />
+                <input className='modalForm__input' type="text" autoComplete='off' {...register("last_name")} />
             </div>
             <div className='modalForm__div'>
                 <label className='modalForm__label' htmlFor="">Email</label>
-                <input className='modalForm__input' type="email" {...register("email")} />
+                <input className='modalForm__input' type="email" autoComplete='off' {...register("email")} />
             </div>
             <div className='modalForm__div'>
                 <label className='modalForm__label' htmlFor="">Password</label>
-                <input className='modalForm__input' type="password" {...register("password")} />
+                <input className='modalForm__input' type="password" autoComplete='off' {...register("password")} />
             </div>
             <div className='modalForm__div'>
                 <label className='modalForm__label' htmlFor="">Birthday</label>
